@@ -13,11 +13,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
+import AuthProvider from './Contaxt/AuthProvider';
 
 function App() {
   return (
     <div className="App">
-
+    <AuthProvider>
      <Router>
       <Header/>
        <Switch>
@@ -51,6 +52,7 @@ function App() {
        </Switch>
        <Footer></Footer>
      </Router>
+     </AuthProvider>
     </div>
   );
 }

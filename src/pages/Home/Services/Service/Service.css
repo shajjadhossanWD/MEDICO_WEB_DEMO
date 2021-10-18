@@ -4,4 +4,19 @@
     padding: 5px 10px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+}
+.buttongrp:hover{
+    letter-spacing: 2px;
+    transition: 0.5s ease-in-out;
+}
+.cardTitle{
+    color: #00A68A;
+}
+.serviceCard{
+   box-shadow: 0.5px 0px 10px 0.5px #00a68a4f;
+}
+.serviceCard:hover{
+    transform: scale(1.04);
+    transition: 0.5s ease-in-out;
 }

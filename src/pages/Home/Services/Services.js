@@ -15,7 +15,7 @@ const Services = () => {
     return (
         <div className="container mx-auto services">
             <h1 className="titleName">Best <br/><span>Provided Services</span></h1>
-            <Row xs={1} md={2} lg={3} className="g-4">
+            <Row xs={1} md={2} lg={3} className="g-4 ">
             {
                services.map(service => <Service key = {service.id} service = {service}></Service>)
             }
