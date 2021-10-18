@@ -1,0 +1,32 @@
+
+.chooseDiv{
+    background-image: url('https://i.ibb.co/SPCWVrV/blog-single-02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    margin: 50px 0;
+}
+.chooseCard{
+    background-color:#00A68A ;
+    color: white;
+    width: 75%;
+    border-radius: 20px;
+    padding: 30px;
+}
+.single_card{
+    padding-right: 10px ;
+    margin-top: 20px;
+}
+.single_card h1{
+    padding: 10px;
+    width: 29%;
+    height: 28%;
+    background-color: white;
+    border-radius: 50%;
+    color: #00A68A;
+    text-align: center;
+    margin: auto;
+}

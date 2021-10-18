@@ -1,0 +1,7 @@
+.img_div{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/G9Q7xvY/page-title-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 80px;
+}

@@ -1,0 +1,33 @@
+.hospital_details{
+    text-align: start;
+    margin-top: 4rem;
+}
+.hospital_details p{
+    text-align: justify;
+}
+.facilities_detail{
+    text-align: start;
+    background-color: #62ddc8  ;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.facilities_detail p{
+    text-align: justify;
+}
+.equipment_detail{
+    text-align: start;
+    background-color: #62ddc8;  
+    padding: 20px;
+}
+.equipment_detail p{
+    text-align: justify;
+}
+.staff_detail{
+    text-align: center;
+}
+.staff_detail p, h2{
+    text-align: justify;
+}
+.staff_facilities{
+    margin-top: 4rem;
+}

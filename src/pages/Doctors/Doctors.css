@@ -1,0 +1,7 @@
+.doctorsImg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/LdDrB32/page-title.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 80px;
+}

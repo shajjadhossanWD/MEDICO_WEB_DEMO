@@ -1,0 +1,57 @@
+[
+    {
+        "img":"https://i.ibb.co/KLftsfd/gynecology-icon-new.png",
+        "name":"Ginecology",
+        "details":"Gynaecology or gynecology (see spelling differences) is the medical practice dealing with the health of the female reproductive system. ... The term means The American Academy of Pediatrics recommends people seek pediatric care through the age of 21.[1][2] In the United Kingdom,health of the female paediatrics.",
+        "id":1
+    },
+    {
+        "img":"https://i.ibb.co/G0dSMJ4/CN-logo-vertical-300x300.png",
+        "name":"Pediatrics",
+        "details":"Paediatrics (also spelled pediatrics or pædiatrics) is the branch of medicine that involves the medical care of infants, children, and adolescents. The American Academy of Pediatrics recommends people seek pediatric care through the age of 21.[1][2] In the United Kingdom, paediatrics covers.",
+        "id":2
+    },
+    {
+        "img":"https://i.ibb.co/YjKR9wf/images.jpg",
+        "name":"Ophthalmology",
+        "details":"Ophthalmology (/ˌɒfθælˈmɒlədʒi/)[1] is a branch of medicine and surgery that deals with the diagnosis and treatment of disorders of the eye.[2] An ophthalmologist is a physician who specializes in ophthalmology.[3] The credentials include a degree in medicine, followed by additional four to.",
+        "id":3
+    },
+    {
+        "img":"https://i.ibb.co/zbBZPp2/Neurology-300x300.png",
+        "name":"Neurology",
+        "details":"Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities. It has two major divisions: Central nervous system: the brain and spinal cord.",
+        "id":4
+    },
+    {
+        "img":"https://i.ibb.co/DL5W5RG/unnamed.png",
+        "name":"Odontology",
+        "details":"Forensic dentists deal with a range of medicolegal problems, but the most common issue addressed is identification of human remains.  Often no fingerprints are on file or are destroyed by decomposition, fragmentation, or by fire as occurred in 9-11 and in most air disasters.  Natural disasters.",
+        "id":5
+    },
+    {
+        "img":"https://i.ibb.co/55st2Y4/Conical-Flask-Labglass-USA-300x300.jpg",
+        "name":"laboratory",
+        "details":"A laboratory (UK: /ləˈbɒrətəri, -tri/; US: /ˈlæbərəˌtɔːri, ˈlæbrə-/; colloquially læbərəˌtɔːri, lab) is a facility that provides controlled conditions in which scientific or technological research, experiments, and measurement may be performed. Laboratory services are provided in a variety of settings: physicians.",
+        "id":6
+    },
+    {
+        "img":"https://i.ibb.co/dQs9yCr/S-Physiotherapy-300x300.png",
+        "name":"physiotherapy",
+        "details":"Physical therapy (PT), also known as physiotherapy, is one of the allied health professions.[1][2][3][4] It is provided by physical therapists who promote, maintain, or restore health through physical examination, diagnosis, prognosis, patient education, physical intervention, rehabilitation.",
+        "id":7
+    },
+    {
+        "img":"https://i.ibb.co/SdyWq9n/orthopedic-3d-animation-medical-animation-company-san-antonio-healthcare-300x300.png",
+        "name":"Orthopedics",
+        "details":"Orthopedics is a branch of medicine that focuses on the care of the musculoskeletal system. ... A person who specializes in orthopedics is known as an orthopedist. Orthopedists use both surgical and nonsurgical approaches to treat a variety of musculoskeletal issues, such as sports injuries.",
+        "id":8
+    },
+    {
+        "img":"https://i.ibb.co/ftShZbx/download.jpg",
+        "name":"laparoscopy",
+        "details":"Laparoscopy is a type of surgical procedure that allows a surgeon to access the inside of the abdomen (tummy) and pelvis without having to make large incisions in the skin. This procedure is also known as keyhole or minimally invasive surgery.surgery,or minimally invasive surgery injuries. ",
+        "id":9
+    }
+    
+]

@@ -1,23 +1,56 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Header from './CommonParts/Header/Header';
+import Home from './pages/Home/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Departments from './pages/Departments/Departments';
+import Doctors from './pages/Doctors/Doctors';
+import AboutUs from './pages/AboutUs/AboutUs';
+import Contact from './pages/Contact/Contact';
+import Notfound from './pages/Notfound/Notfound';
+import Footer from './CommonParts/Footer/Footer';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+     <Router>
+      <Header/>
+       <Switch>
+         <Route exact path="/">
+            <Home></Home>
+         </Route>
+         <Route path="/home">
+            <Home></Home>
+         </Route>
+         <Route exact path="/departments">
+           <Departments></Departments>
+         </Route>
+         <Route exact path="/doctors">
+           <Doctors></Doctors>
+         </Route>
+         <Route exact path="/about">
+           <AboutUs></AboutUs>
+         </Route>
+         <Route exact path="/contact">
+           <Contact></Contact>
+         </Route>
+         <Route path="/login">
+           <Login></Login>
+         </Route>
+         <Route path="/register">
+           <Register></Register>
+         </Route>
+         <Route path="*">
+           <Notfound></Notfound>
+         </Route>
+       </Switch>
+       <Footer></Footer>
+     </Router>
     </div>
   );
 }

@@ -1,0 +1,12 @@
+.awards{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.ibb.co/yhyB8Ds/slider-003.jpg');
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 5rem 0;
+    width: 100%;
+    padding: 40px;
+}

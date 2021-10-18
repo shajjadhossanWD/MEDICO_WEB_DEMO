@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Lumbar therap",
+        "shortdescription":"Lumbar stabilization is an active form exercise used in physical therapy.",
+        "description": "Lumbar stabilization is an active form of exercise used in physical therapy. It is designed to strengthen muscles to support the spine and help prevent .Seamlessly embrace client-based solutions rather than fully researched imperatives.",
+        "id": 1,
+        "img":"https://i.ibb.co/xCT9YXq/physi-02.jpg",
+        "cost": 99,
+        "rating": 4,
+        "doctor": "Vanessa Carvajal"
+    },
+    {
+        "name": "Babys care",
+        "shortdescription":"Pediatricians, optometrists, and gynecologists are a few types of doctors.",
+        "description": "Pediatricians, dentists, optometrists, and gynecologists are a few types of doctors your child needs. Read about their roles in keeping children healthy.Seamlessly embrace client-based solutions rather than fully researched imperatives.",
+        "id": 2,
+        "img": "https://i.ibb.co/YDw6CRz/ped-01.jpg",
+        "cost": 99,
+        "rating": 3,
+        "doctor": "Alexanser Perez"
+    },
+    {
+        "name": "Joint prosthesis",
+        "shortdescription":"Total joint replacement is a surgical procedure which parts of an arthritic.",
+        "description": "Total joint replacement is a surgical procedure in which parts of an arthritic or damaged joint are removed and replaced with a metal, plastic, or ceramic device called a prosthesis. The prosthesis is designed to replicate the movement of a normal, healthy joint.",
+        "id": 3,
+        "img": "https://i.ibb.co/xKkWm1g/X-ray-scan-image-of-hip-joints-with-orthopedic-hip-joint-replacement-or-total-hip-prosthesis-on-righ.jpg",
+        "cost": 399,
+        "rating": 5,
+        "doctor": "Javier Arias"
+    },
+    {
+        "name": "Orthopedic surgery",
+        "shortdescription":"Orthopedic surgery is performed the musculoskeletal system in case of injuries.",
+        "description": "Orthopedic surgery is performed on the musculoskeletal system in case of injuries, trauma, or various conditions. The musculoskeletal system includes bones, joints, and adjacent soft tissues: muscles - protecting and allowing movement of bones and joints.",
+        "id": 4,
+        "img": "https://i.ibb.co/kKtMbnz/ortho-03.jpg",
+        "cost": 449,
+        "rating": 4.5,
+        "doctor": "Delfina Villareal"
+    },
+    {
+        "name": "Orthopedics implants",
+        "shortdescription":"Orthopedic Implants: Narang Medical is manufacturer and suppliers of Orthopaedic.",
+        "description": "Orthopedic Implants: Narang Medical is manufacturer and suppliers of Orthopaedic Implants and Instruments. We are India's top Orthopedic Implant Company.Seamlessly embrace client-based solutions rather than fully researched imperatives.",
+        "id": 5,
+        "img": "https://i.ibb.co/sVMRZRx/Hospital-orthopedics-Traumatology-surgical-operation-on-torn-meniscus-in-knee-emergency-operating-ro.jpg",
+        "cost": 269,
+        "rating": 3.5,
+        "doctor": "Jorge Gavidia"
+    },
+    {
+        "name": "Ocular Review",
+        "shortdescription":"Review of Ophthalmology highlights current, clinically  information on surgical.",
+        "description": "Review of Ophthalmology highlights current, clinically relevant information on surgical techniques, disease diagnosis and management and new technologies.Review of Ophthalmology highlights current, clinically relevant information on surgical techniques, disease diagnosis and management and new technologies.",
+        "id": 6,
+        "img": "https://i.ibb.co/YZmMVJT/ocu-01.jpg",
+        "cost": 199,
+        "rating": 4,
+        "doctor": "Janna Gimenez"
+    },
+    {
+        "name": "Brain tomography",
+        "shortdescription":"Computed tomography the head uses special x-ray equipment help assess head injuries.",
+        "description": "Computed tomography (CT) of the head uses special x-ray equipment to help assess head injuries, severe headaches, dizziness, and other symptoms of aneurysm, bleeding, stroke, and brain tumors. It also helps your doctor to evaluate your face, sinuses, and skull or to plan radiation therapy for brain cancer.",
+        "id": 7,
+        "img": "https://i.ibb.co/qBpVBw1/neuro-01.jpg",
+        "cost": 699,
+        "rating": 5,
+        "doctor": "Tom Smith"
+    },
+    {
+        "name": "Visual Measure",
+        "shortdescription":"low refraction (in relation to the length of the eyeball and curvature of cornea) .",
+        "description": "low refraction (in relation to the length of the eyeball and curvature of cornea) is, respectively, the cause of near-sightedness (myopia or minus power) or far-sightedness (hyperopia or plus power); normal refractive status is referred to as emmetropia (zero power). Other optical causes are astigmatism or more complex corneal irregularities. These anomalies can mostly be corrected by optical means (such as eyeglasses, contact lenses, refractive surgery",
+        "id": 8,
+        "img": "https://i.ibb.co/pffGPqM/ocu-04.jpg",
+        "cost": 239,
+        "rating": 4.5,
+        "doctor": "Russel Androz"
+    },
+    {
+        "name": "Modern equipment",
+        "shortdescription":"In this section you can find all types of modern equipment, that's helps a lot",
+        "description": "low refraction (in relation to the length of the eyeball and curvature of cornea) is, respectively, the cause of near-sightedness (myopia or minus power) or far-sightedness (hyperopia or plus power); normal refractive status is referred to as emmetropia (zero power). Other optical causes are astigmatism or more complex corneal irregularities. These anomalies can mostly be corrected by optical means (such as eyeglasses, contact lenses, refractive surgery",
+        "id": 9,
+        "img": "https://i.ibb.co/VTXbytY/lab-04.jpg",
+        "cost": 189,
+        "rating": 4,
+        "doctor": "Ms. Stiven"
+    }
+]
