@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import AuthProvider from './Contaxt/AuthProvider';
+import PrivateServices from './pages/Home/Services/PrivateRout/PrivateServices';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
          </Route>
          <Route path="/home">
             <Home></Home>
+         </Route>
+         <Route path="/services/:serviceName">
+           <PrivateServices></PrivateServices>
          </Route>
          <Route exact path="/departments">
            <Departments></Departments>
