@@ -10,6 +10,9 @@
     letter-spacing: 2px;
     transition: 0.5s ease-in-out;
 }
+.cardBody a{
+    text-decoration: none;
+}
 .cardTitle{
     color: #00A68A;
 }

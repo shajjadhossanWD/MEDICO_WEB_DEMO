@@ -1,12 +1,12 @@
-import React from 'react';
- import { useHistory, useLocation } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
-    const {setPassword, setEmail, signInUsingGoogle, error, signInUsingEmail} = useAuth();
+    const {setPassword, setEmail, setisLoading, signInUsingGoogle, error, signInUsingEmail} = useAuth();
      const location = useLocation()
      const history = useHistory()
+     
      const redirectAuth = location.state?.from || "/home";
      const handleLoginBtn = () =>{
          signInUsingGoogle()
@@ -14,6 +14,7 @@ const Login = () => {
              history.push(redirectAuth);
              console.log(res)
          })
+         .finally(()=>setisLoading(false))
      }
 
     const handlePassword =(e)=>{
@@ -35,14 +36,14 @@ const Login = () => {
                </div>
                <div className="col-lg-6 my-auto">
               <form onSubmit={signInUsingEmail}>
-              <input onBlur={handleEmail} required type="email" placeholder="your email address" className="mt-3 p-2 w-75"/>
+              <input onBlur={handleEmail} required type="email" placeholder="your email address" className="mt-3 p-2 emailInput"/>
                    <br />
-                   <input onBlur={handlePassword} required type="password" placeholder="your password" className="mt-3 p-2 w-75" />
+                   <input onBlur={handlePassword} required type="password" placeholder="your password" className="mt-3 p-2 passwordInput" />
                    <p className="text-danger"><b>{error}</b></p>
-                   <button className="mt-3 p-2 w-75 inputBtn" type="submit">Login</button>
+                   <button className="mt-3 p-2 inputBtn" type="submit">Login</button>
                     <p className="text-white mt-2">-------or-------</p>
               </form>
-              <button className="mt-3 p-2 w-75 googleBtn" onClick={handleLoginBtn} >Sign in with Google</button>
+              <button className="mt-3 p-2  googleBtn" onClick={handleLoginBtn} >Sign in with Google</button>
 
                </div>
             </div>

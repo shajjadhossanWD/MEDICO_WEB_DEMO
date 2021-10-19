@@ -1,0 +1,6 @@
+.deparmentCard:hover{
+   background-color: #00A68A;
+   color: white;
+   transition: 0.6s ease-in-out;
+   cursor: pointer;
+}

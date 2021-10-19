@@ -15,11 +15,13 @@ const useFirebase = () =>{
     const [error, setError] = useState('');
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
+    const [isloading, setisLoading] = useState(true);
    
     const auth = getAuth();
    
 //    google signin/regestration ..................
     const signInUsingGoogle = () =>{
+        setisLoading(true)
       return signInWithPopup(auth, googleProvider)
       
     }
@@ -27,7 +29,12 @@ const useFirebase = () =>{
     // github signin/regestration ------------------
     const signInUsingGithub = () =>{
         return signInWithPopup(auth, githubProvider)
-      
+          .then(result=>{
+              const user = result.user;
+              console.log(user);
+          }).catch(error=>{
+              setError(error.message);
+          })
     }
 
     //emailPassword Registration method......................
@@ -96,17 +103,19 @@ const useFirebase = () =>{
             if(user){
                 setUser(user);
             }
+            setisLoading(false);
         })
     },[])
 
 
      //Logout method..................
      const logOut = () =>{
+         setisLoading(true);
         signOut(auth).then(() => {
             setUser({});
-          }).catch((error) => {
-             setError(error.message);
-          });
+          })
+          .finally(()=>setisLoading(false))
+          
      }
 
 return{
@@ -114,12 +123,14 @@ return{
     error,
     password,
     email,
+    isloading,
     setPassword,
     setEmail,
     signInUsingGoogle,
     signInUsingGithub,
     signUpUsingEmail,
     signInUsingEmail,
+    setisLoading,
     logOut
 }
 

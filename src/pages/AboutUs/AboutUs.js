@@ -7,8 +7,9 @@ const AboutUs = () => {
         <div className="img_div">
             <h1 className="text-white">About Us.</h1>
         </div>
+        {/*------------------------ Hospital section ------------------------ */}
         <div className="hospital_section container mx-auto">
-        <h1 className="my-5">MEDICO HOSPITAL..</h1>
+        <h1 className="my-5 titleName">MEDICO <span>HOSPITAL..</span></h1>
             <div className="row ">
                 <div className="col-lg-6">
                     <img src="https://i.ibb.co/r41n4yb/image-001.jpg" className="w-75" alt="" />
@@ -21,8 +22,9 @@ const AboutUs = () => {
             </div>
         </div>
 
+{/*------------------------ Facilities section ---------------------- */}
         <div className="facilities container">
-            <h1 className="my-5">Our Best Facilities</h1>
+            <h1 className="my-5 titleName">Our Best <br/><span>Facilities</span></h1>
             <div className="row">
               <div className="col-lg-6 facilities_detail">
                   <h2>We Provide Our best services..</h2>
@@ -36,8 +38,9 @@ const AboutUs = () => {
             </div>
         </div>
 
+{/*-------------------------- equipments section ------------------------- */}
         <div className="equipments container">
-        <h1 className="my-5">Our Equipments</h1>
+        <h1 className="my-5 titleName">Our <span>Equipments</span></h1>
         <div className="row">
             <div className="col-lg-6">
                 <img src="https://i.ibb.co/Ph6YSQz/image-005.jpg" className="w-100" alt="" />
@@ -50,8 +53,9 @@ const AboutUs = () => {
 
         </div>
 
+{/*------------------------- Our staff section -------------------- */}
         <div className="Stafs container my-5 ">
-            <h1 className="my-5">About Our Staf</h1>
+            <h1 className="my-5 titleName">About <span>Our Staf</span></h1>
              <div className="row">
                  <div className="col-lg-6 staff_detail">
                      <h2>Best Qualified Staff</h2>

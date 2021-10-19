@@ -11,10 +11,10 @@ const Doctors = () => {
     return (
         <div>
            <div className="doctorsImg">
-               <h1 className="text-white">Our best Doctors</h1>
+               <h1 className="text-white titleName">Our <span>best Doctors</span></h1>
            </div>
            
-           <h1 className="my-5">Our Best <br /> Qualified Doctors</h1>
+           <h1 className="my-5 titleName">Our Best <br /> <span>Qualified Doctors</span></h1>
            <Row xs={1} md={2} lg={3} className="g-4 container mx-auto"> 
               {
                   doctors.map(doctor => <Doctor key = {doctor.id} doctor = {doctor}></Doctor>)

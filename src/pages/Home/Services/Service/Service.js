@@ -9,7 +9,7 @@ const Service = (props) => {
           <Col>
             <Card className="serviceCard">
               <Card.Img variant="top" src={img} />
-              <Card.Body>
+              <Card.Body className="cardBody">
                 <Card.Title className="cardTitle">{name}</Card.Title>
                 <Card.Text>
                   {shortdescription}

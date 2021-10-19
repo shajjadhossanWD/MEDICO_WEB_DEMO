@@ -16,9 +16,9 @@ useEffect(()=>{
     return (
         <div className="departments">
           <div className="img_div">
-            <h1 className="text-white">Our Departments</h1>
+            <h1 className="text-white titleName">Our <span>Departments</span> </h1>
           </div>
-          <h1 className="my-5"> Main Departments</h1>
+          <h1 className="my-5 titleName"> Main <span>Departments</span></h1>
           <Row xs={1} md={2} lg={3} className="g-4 container mx-auto"> 
           
               {

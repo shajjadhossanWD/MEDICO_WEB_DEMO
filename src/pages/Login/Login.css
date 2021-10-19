@@ -22,10 +22,33 @@
     border-radius: 10px;
     background-color: #e6134a;
     color: white;
+    width: 75%;
 }
 .googleBtn, .githubBtn{
     border: none;
     border-radius: 10px;
     background-color: rgba(85, 81, 81, 0.952);
     color: white;
+    width: 75%;
+}
+.emailInput{
+    width: 75%;
+}
+.passwordInput{
+    width: 75%;
+}
+
+@media (max-width:667px){
+    .emailInput{
+        width: 100%;
+    }
+    .passwordInput{
+        width: 100%;
+    }
+    .googleBtn, .githubBtn{
+        width: 100%;
+    }
+    .inputBtn{
+        width: 100%;
+    }
 }

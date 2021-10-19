@@ -5,7 +5,7 @@ const Doctor = (props) => {
     const {img, name, spatial, age} = props.doctor;
     return (
         <Col>
-        <Card>
+        <Card className="doctorCard">
           <Card.Img variant="top" src={img} className="w-100 mx-auto" />
           <Card.Body>
             <Card.Title>{name}</Card.Title>
