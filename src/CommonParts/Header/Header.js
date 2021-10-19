@@ -21,7 +21,7 @@ const Header = () => {
     
             </Nav>
             <Nav>
-                <Nav.Link>signin as: {user.displayName ? user.displayName : user.email} </Nav.Link>
+                <Nav.Link>signin as: {user.displayName} </Nav.Link>
                 {user.email ? <Nav.Link onClick={logOut}>Logout</Nav.Link>:
                 <Nav.Link as={Link} to="/login" >SignIn</Nav.Link>}         
                 <Nav.Link as={Link} to="/register" >SignUp</Nav.Link>

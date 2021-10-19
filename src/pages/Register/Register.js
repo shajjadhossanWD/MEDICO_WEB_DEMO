@@ -3,8 +3,13 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 const Register = () => {
-    const {setPassword, setEmail, signInUsingGoogle, signInUsingGithub, error, signUpUsingEmail} = useAuth();
+    const {setPassword, setName, setEmail, signInUsingGoogle, signInUsingGithub, error, signUpUsingEmail} = useAuth();
 
+
+    //name handle.............. 
+    const handleName= (e) =>{
+      setName(e.target.value);
+    }
   //password handle ..............
     const handlePassword =(e)=>{
         setPassword(e.target.value);
@@ -22,7 +27,7 @@ const Register = () => {
         <div className="registerCard">
         <h1 className="text-white">Please register your account</h1>
 
-            <div className="row">
+            <div className="row ">
                <div className="col-lg-6">
                    <img src="https://i.ibb.co/zbBZPp2/Neurology-300x300.png" className="w-75" alt="" />
                </div>
@@ -31,6 +36,8 @@ const Register = () => {
                    <button onClick={signInUsingGithub} className="mt-3 p-2 githubBtn">Register with Github</button>
                  <form onSubmit={signUpUsingEmail}>
                    <p className="text-white mt-3">-------or-------</p>
+                   <input onBlur={handleName} required type="text" placeholder="your name" className="mt-3 p-2 emailInput"/>
+                   <br />
                    <input onBlur={handleEmail} required type="email" placeholder="your email address" className="mt-3 p-2 emailInput"/>
                    <br />
                    <input onBlur={handlePassword} required type="password" placeholder="your password" className="mt-3 p-2 passwordInput" />

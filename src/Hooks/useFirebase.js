@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, GithubAuthProvider,sendEmailVerification, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut  } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, updateProfile, onAuthStateChanged, GithubAuthProvider,sendEmailVerification, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut  } from "firebase/auth";
 import initializeAuthentication from "../Firebase/FirebaseInit/FirebaseInit";
 
 
@@ -16,6 +16,7 @@ const useFirebase = () =>{
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
     const [isloading, setisLoading] = useState(true);
+    const [name, setName] = useState('');
    
     const auth = getAuth();
    
@@ -58,9 +59,19 @@ const useFirebase = () =>{
             veryfyEmail();
             setError('');
             console.log(user)
+            setUserName();
         }).catch(error =>{
             setError(error.message)
         });
+    }
+
+
+    // add user name method .............................. 
+    const setUserName = () =>{
+        updateProfile(auth.currentUser, {
+            displayName: name
+        })
+        .then(resu=>{})
     }
      
     //emailPassword login method.................. 
@@ -100,11 +111,13 @@ const useFirebase = () =>{
      }
 
 return{
+    name,
     user,
     error,
     password,
     email,
     isloading,
+    setName,
     setPassword,
     setEmail,
     signInUsingGoogle,
