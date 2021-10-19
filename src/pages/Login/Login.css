@@ -37,6 +37,13 @@
 .passwordInput{
     width: 75%;
 }
+.togglebtn{
+    background-color:#e6134a;
+    text-decoration: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 10px;
+}
 
 @media (max-width:667px){
     .emailInput{

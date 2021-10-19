@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 const Register = () => {
     const {setPassword, setEmail, signInUsingGoogle, signInUsingGithub, error, signUpUsingEmail} = useAuth();
 
-
+  //password handle ..............
     const handlePassword =(e)=>{
         setPassword(e.target.value);
    }
 
+   //email handle.................
    const handleEmail =(e)=>{
        setEmail(e.target.value);
    }
@@ -33,6 +35,7 @@ const Register = () => {
                    <br />
                    <input onBlur={handlePassword} required type="password" placeholder="your password" className="mt-3 p-2 passwordInput" />
                    <p className="text-danger"><b>{error}</b></p>
+                   <p className="text-white mt-3">Already Registered? please <Link to="/login" className="togglebtn">Login Now</Link></p>
                    <button className="mt-3 p-2 inputBtn">Register</button>
                  </form>
                     

@@ -1,4 +1,4 @@
-import { useHistory, useLocation } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import './Login.css';
 
@@ -69,6 +69,7 @@ const Login = () => {
                    <input onBlur={handlePassword} required type="password" placeholder="your password" className="mt-3 p-2 passwordInput" />
                    <p className="text-danger"><b>{error}</b></p>
                    <button className="mt-3 p-2 inputBtn" type="submit">Login</button>
+                    <p className="text-white mt-3">New to MEDICO.WEB? please <Link to="/register" className="togglebtn">Register Now</Link></p>
                     <p className="text-white mt-2">-------or-------</p>
               </form>
               <button className="mt-3 p-2  googleBtn" onClick={handleLoginBtn} >Sign in with Google</button>
