@@ -1,10 +1,21 @@
 import React from 'react';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
     const {setPassword, setEmail, signInUsingGoogle, error, signInUsingEmail} = useAuth();
+    const location = useLocation()
+    const history = useHistory()
 
+    const handleLoginBtn = () =>{
+        const redirectAuth = location.state?.form || "/home";
+        signInUsingGoogle()
+        .then((res)=>{
+            history.push(redirectAuth);
+            console.log(res)
+        })
+    }
 
     const handlePassword =(e)=>{
          setPassword(e.target.value);
@@ -32,7 +43,7 @@ const Login = () => {
                    <button className="mt-3 p-2 w-75 inputBtn" type="submit">Login</button>
                     <p className="text-white mt-2">-------or-------</p>
               </form>
-              <button className="mt-3 p-2 w-75 googleBtn" onClick={signInUsingGoogle} >Sign in with Google</button>
+              <button className="mt-3 p-2 w-75 googleBtn" onClick={handleLoginBtn} >Sign in with Google</button>
 
                </div>
             </div>

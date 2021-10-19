@@ -20,13 +20,7 @@ const useFirebase = () =>{
    
 //    google signin/regestration ..................
     const signInUsingGoogle = () =>{
-        signInWithPopup(auth, googleProvider)
-        .then(result =>{
-            const user = result.user;
-            setUser(user);
-        }).catch(error =>{
-            setError(error.message)
-        })
+      return signInWithPopup(auth, googleProvider)
     }
     
     // github signin/regestration ------------------
