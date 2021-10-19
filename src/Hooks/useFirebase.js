@@ -64,28 +64,9 @@ const useFirebase = () =>{
     }
      
     //emailPassword login method.................. 
-    const signInUsingEmail = e =>{
-        e.preventDefault();
-        if(password.length < 6){
-            setError('password must be contain at last 6 character');
-            return;
-        }
-        if(!/(?=.*?[A-Z])/.test(password)){
-            setError('password Must contain 1 upper case');
-            return;
-        }
-        if(!/(?=.*?[0-9])/.test(password)){
-            setError('password Must contain 1 digit')
-            return;
-        }
-        signInWithEmailAndPassword(auth, email, password)
-        .then(result =>{
-            const user = result.user
-            console.log(user)
-            setError('');
-        }).catch(error =>{
-            setError(error.message)
-        })
+    const signInUsingEmail = () =>{
+        setisLoading(true)
+        return signInWithEmailAndPassword(auth, email, password)
     }
 
     //emailverification ///////.......................
