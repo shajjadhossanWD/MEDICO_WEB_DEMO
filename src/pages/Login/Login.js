@@ -1,21 +1,20 @@
 import React from 'react';
-import { useHistory, useLocation } from 'react-router';
+ import { useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
     const {setPassword, setEmail, signInUsingGoogle, error, signInUsingEmail} = useAuth();
-    const location = useLocation()
-    const history = useHistory()
-
-    const handleLoginBtn = () =>{
-        const redirectAuth = location.state?.form || "/home";
-        signInUsingGoogle()
-        .then((res)=>{
-            history.push(redirectAuth);
-            console.log(res)
-        })
-    }
+     const location = useLocation()
+     const history = useHistory()
+     const redirectAuth = location.state?.from || "/home";
+     const handleLoginBtn = () =>{
+         signInUsingGoogle()
+         .then(res =>{
+             history.push(redirectAuth);
+             console.log(res)
+         })
+     }
 
     const handlePassword =(e)=>{
          setPassword(e.target.value);

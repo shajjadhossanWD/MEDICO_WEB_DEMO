@@ -15,7 +15,8 @@ import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import AuthProvider from './Contaxt/AuthProvider';
 import PrivateServices from './pages/Home/Services/SingleService/PrivateServices';
-import PrivateRoute from './PrivateRoute/PrivateRoute';
+import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
+
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
             <Home></Home>
          </Route>
          <PrivateRoute path="/services/:serviceName">
-           <PrivateServices></PrivateServices>
+           <PrivateServices/>
          </PrivateRoute>
          <Route exact path="/departments">
            <Departments></Departments>
